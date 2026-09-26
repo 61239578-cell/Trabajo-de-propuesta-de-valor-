@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Participa — Smart Fit Cusco</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a class="logo" href="index.html">SMART FIT CUSCO</a>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="problema.html">Problema</a>
+      <a href="propuesta.html">Propuesta</a>
+      <a href="como-funciona.html">Cómo funciona</a>
+      <a href="respaldo.html">Respaldo</a>
+      <a href="contacto.html" class="nav-cta active">Participar</a>
+    </div>
+  </nav>
+
+  <section class="formulario" style="background-image:url('https://images.pexels.com/photos/1488464/pexels-photo-1488464.jpeg?cs=srgb&fm=jpg&w=1800')">
+    <div class="wrap">
+      <p class="label">Participa</p>
+      <h1>Participa de esta venta</h1>
+      <p class="lead">Ayúdanos a validar si este servicio tiene sentido para ti y sé de los primeros en acceder. Toma menos de 2 minutos.</p>
+
+      <div class="benef-row">
+        <div class="benef-item"><span>01</span>Acceso prioritario al lanzamiento</div>
+        <div class="benef-item"><span>02</span>Precio especial de preventa</div>
+        <div class="benef-item"><span>03</span>Sin compromiso de compra</div>
+      </div>
+
+      <div class="form-shell">
+        <!--
+          Este formulario envía las respuestas con Formspree (gratis, sin código).
+          Para activarlo:
+          1. Entra a https://formspree.io y crea una cuenta gratuita con tu correo.
+          2. Crea un nuevo formulario ("New Form") y copia el endpoint que te dan (algo como https://formspree.io/f/xxxxxxx).
+          3. Reemplaza PEGA_AQUI_TU_ENDPOINT_DE_FORMSPREE en el atributo action de abajo por ese link.
+          4. Formspree te pedirá confirmar tu correo la primera vez que llegue una respuesta de prueba — dale "confirmar".
+          A partir de ahí, cada envío te llega directo al correo y también queda guardado en tu panel de Formspree.
+        -->
+        <form class="native-form" action="PEGA_AQUI_TU_ENDPOINT_DE_FORMSPREE" method="POST">
+
+          <fieldset class="form-block">
+            <legend><span class="fb-num">01</span> Interés</legend>
+            <div class="field">
+              <label>¿Te interesaría usar este servicio si estuviera disponible en una tienda de Cusco?</label>
+              <div class="radio-group">
+                <label class="radio-option"><input type="radio" name="interes" value="Si, definitivamente" required> Sí, definitivamente</label>
+                <label class="radio-option"><input type="radio" name="interes" value="Tal vez"> Tal vez</label>
+                <label class="radio-option"><input type="radio" name="interes" value="No"> No</label>
+              </div>
+            </div>
+            <div class="field">
+              <label>¿Pagarías un poco más por la garantía de encontrar tu talla exacta?</label>
+              <div class="radio-group">
+                <label class="radio-option"><input type="radio" name="pagaria_mas" value="Si" required> Sí</label>
+                <label class="radio-option"><input type="radio" name="pagaria_mas" value="No"> No</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-block">
+            <legend><span class="fb-num">02</span> Sobre tu experiencia con las tallas</legend>
+            <div class="field">
+              <label for="talla">Tu talla habitual</label>
+              <select id="talla" name="talla_habitual" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option>XS</option><option>S</option><option>M</option>
+                <option>L</option><option>XL</option><option>XXL</option><option>XXL+</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>¿Con qué frecuencia no encuentras tu talla al comprar ropa?</label>
+              <div class="radio-group">
+                <label class="radio-option"><input type="radio" name="frecuencia" value="Siempre" required> Siempre</label>
+                <label class="radio-option"><input type="radio" name="frecuencia" value="A veces"> A veces</label>
+                <label class="radio-option"><input type="radio" name="frecuencia" value="Rara vez"> Rara vez</label>
+              </div>
+            </div>
+            <div class="field">
+              <label>Nivel de frustración con este problema (1 = nada, 5 = muchísimo)</label>
+              <div class="radio-group scale">
+                <label class="radio-option"><input type="radio" name="frustracion" value="1" required> 1</label>
+                <label class="radio-option"><input type="radio" name="frustracion" value="2"> 2</label>
+                <label class="radio-option"><input type="radio" name="frustracion" value="3"> 3</label>
+                <label class="radio-option"><input type="radio" name="frustracion" value="4"> 4</label>
+                <label class="radio-option"><input type="radio" name="frustracion" value="5"> 5</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-block">
+            <legend><span class="fb-num">03</span> Tus datos</legend>
+            <div class="field-row">
+              <div class="field">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+              </div>
+              <div class="field">
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="whatsapp">WhatsApp (opcional, para avisarte del lanzamiento)</label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="+51 9XX XXX XXX">
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn submit-btn">Enviar mis respuestas</button>
+        </form>
+      </div>
+
+      <p class="form-note">Tus datos solo se usan para validar este proyecto universitario y avisarte si el servicio se lanza. No se comparten con terceros.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">Smart Fit Cusco · Diseño de la Propuesta de Valor · <a href="index.html" style="color:inherit;">Volver al inicio</a></div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
