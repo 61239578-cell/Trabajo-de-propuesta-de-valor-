@@ -1,0 +1,54 @@
+body.proto{background:#FFF8F0;color:#1F1A17;font-size:17px}
+.pmain{padding-top:96px;padding-bottom:48px}
+.pbar{height:8px;background:#E6D9C8;border-radius:8px;overflow:hidden}
+#bar{height:100%;width:0;background:#0F6B73;transition:width .35s}
+.steplabel{margin:10px 0 18px;font-weight:600;color:#0F6B73}
+.layout{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:960px){.layout{grid-template-columns:1fr 290px}}
+#stage{background:#fff;border:2px solid #1F1A17;border-radius:14px;padding:26px}
+#panel{background:#fff;border:2px solid #0F6B73;border-radius:14px;padding:18px;align-self:start}
+#stage h2{font-size:2rem;margin-bottom:8px;color:#1F1A17}
+#stage p,#stage li,#stage label{color:#1F1A17}
+.sub{color:#3A332D;margin-bottom:14px}
+.row{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.btn2,.ghost,.chip,.lk{font:inherit;font-weight:600;cursor:pointer;border-radius:10px;padding:12px 20px;border:2px solid #1F1A17}
+.btn2{background:#B3392B;color:#fff;border-color:#B3392B}
+.btn2:hover{background:#8f2c20}.btn2:disabled{opacity:.45;cursor:not-allowed}
+.ghost{background:#fff;color:#1F1A17}.ghost:hover{background:#F2B134}
+.why{background:#E4F3F4;border-left:6px solid #0F6B73;padding:12px 16px;margin:12px 0;border-radius:8px}
+.err{background:#FDE7E3;border-left:6px solid #B3392B;padding:10px 14px;margin-top:12px;border-radius:8px;font-weight:600}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));margin-top:14px}
+.card{border:2px solid #1F1A17;border-radius:12px;padding:14px;background:#fff}
+.card.best{border-color:#0F6B73;box-shadow:0 0 0 4px #BFE3E6}
+.card h3{font-size:1.4rem;margin:6px 0}
+.sim{background:#F1E6D6;border-radius:10px;padding:6px;text-align:center}
+.sim svg{width:100%;max-width:190px;height:auto}
+.sim img{width:100%;border-radius:8px}
+.pick{cursor:pointer;text-align:center}.pick:hover{background:#FFF1CF}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0}
+.chip{background:#fff}.chip.on{background:#0F6B73;color:#fff;border-color:#0F6B73}
+.sw{display:inline-block;width:16px;height:16px;border-radius:50%;border:2px solid #1F1A17;vertical-align:-3px;margin-right:6px}
+.fields{display:grid;gap:12px;grid-template-columns:repeat(2,1fr);margin:14px 0}
+.fields input,select,textarea{font:inherit;width:100%;padding:11px;border:2px solid #1F1A17;border-radius:8px;background:#fff;color:#1F1A17}
+.two{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:760px){.two{grid-template-columns:1fr 240px}}
+.chk{list-style:none;margin:8px 0;padding:0}.chk li{padding:2px 0;font-size:.95rem}
+.ok{color:#0B6B3A;font-weight:700}.no{color:#B3392B;font-weight:700}
+.fit{font-weight:700;padding:6px 10px;border-radius:8px;margin:8px 0}
+.fit.ok{background:#DDF3E4}.fit.warn{background:#FFE8B5;color:#6a4300}
+.sm{font-size:.88rem;color:#3A332D}
+table{border-collapse:collapse;width:100%;margin-top:12px;font-size:.92rem}
+th,td{border:1px solid #1F1A17;padding:7px;text-align:left}th{background:#F2B134}
+.track{list-style:none;padding:0;margin:14px 0}
+.track li{padding:12px 14px;border:2px solid #CDBFAB;border-radius:10px;margin-bottom:8px;color:#6b6357}
+.track li.done{border-color:#0B6B3A;background:#DDF3E4;color:#1F1A17;font-weight:600}
+.ticket{border:3px dashed #1F1A17;border-radius:12px;padding:14px;background:#FFF1CF}
+.ticket b{font-size:1.5rem;letter-spacing:.1em}
+.lkrow{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 16px}
+.lk{padding:8px 16px;background:#fff}.lk.on{background:#B3392B;color:#fff;border-color:#B3392B}
+.q{font-weight:600;margin-top:12px}
+#panel h3{font-size:1.3rem;margin-bottom:8px}
+#panel li{list-style:none;display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid #E6D9C8;font-size:.92rem}
+#panel button{font:inherit;font-size:.82rem;background:none;border:none;color:#0F6B73;font-weight:700;cursor:pointer;text-decoration:underline}
+.demo-note{margin-top:18px;font-size:.88rem;color:#3A332D}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:4px solid #F2B134;outline-offset:2px}

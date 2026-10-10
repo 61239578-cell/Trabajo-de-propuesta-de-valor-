@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prototipo — Smart Fit Cusco</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/prototipo.css">
+</head>
+<body class="proto">
+  <nav class="site-nav">
+    <a class="logo" href="index.html">SMART FIT CUSCO</a>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="problema.html">Problema</a>
+      <a href="propuesta.html">Propuesta</a>
+      <a href="como-funciona.html">Cómo funciona</a>
+      <a href="respaldo.html">Respaldo</a>
+      <a href="prototipo.html" class="nav-cta active">Prototipo</a>
+    </div>
+  </nav>
+  <main class="wrap pmain">
+    <div class="pbar" aria-hidden="true"><div id="bar"></div></div>
+    <p id="steplabel" class="steplabel"></p>
+    <div class="layout">
+      <section id="stage" aria-live="polite"></section>
+      <aside id="panel"></aside>
+    </div>
+    <p class="demo-note">Prototipo académico: precios, stock y materiales son datos de ejemplo, no de una tienda real.</p>
+  </main>
+  <script src="assets/script.js"></script>
+  <script src="assets/config.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
